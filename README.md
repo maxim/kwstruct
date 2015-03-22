@@ -16,3 +16,4 @@ Any non-existent arguments will raise an ArgumentError.
 ## Credits
 
 Thanks [@apeiros](https://github.com/apeiros) for ideas.
+Thanks [@bughit](https://github.com/bughit) for hitting a bug.
