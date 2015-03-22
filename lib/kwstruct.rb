@@ -1,5 +1,6 @@
 class KwStruct < Struct
-  VERSION = '0.1.0'
+  VERSION = '0.2.0'
+
   def self.new(*members, &block)
     super.tap do |struct_class|
       struct_class.class_eval <<-RUBY
