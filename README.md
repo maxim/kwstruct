@@ -12,3 +12,7 @@ Any non-existent arguments will raise an ArgumentError.
 ## Installation
 
     $ gem install kwstruct
+
+## Credits
+
+Thanks [@apeiros](https://github.com/apeiros) for ideas.
