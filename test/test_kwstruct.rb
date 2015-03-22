@@ -45,4 +45,14 @@ class TestKwstruct < Test::Unit::TestCase
     assert_equal 'foo', struct_obj.foo
     assert_equal 'bar', struct_obj.bar
   end
+
+  def test_kwstruct_does_not_clobber_its_own_initialize
+    $test_kw_struct = KwStruct.dup
+    def $test_kw_struct.method_added(name)
+      if name == :initialize && self == $test_kw_struct
+        raise "expected initialize not to be added to KwStruct"
+      end
+    end
+    $test_kw_struct.new(:foo)
+  end
 end
