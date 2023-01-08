@@ -1,3 +1,5 @@
+Now that ruby structs have `keyword_init: true`, and Data class works with keywords out of the box, this is no longer needed. For a more featureful approach, consider [portrayal](https://github.com/scottscheapflights/portrayal).
+
 # kwstruct
 
 Just like regular Struct, but uses keyword arguments.
